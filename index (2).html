@@ -1,0 +1,308 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Email App
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="min-h-screen flex flex-col">
+   <!-- Header -->
+   <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <div class="flex items-center">
+     <img alt="Company logo, a stylized letter 'E' in blue and white" class="h-10 w-10 mr-2" src="https://placehold.co/40x40"/>
+     <h1 class="text-xl font-bold">
+      Email App
+     </h1>
+    </div>
+    <div class="flex items-center">
+     <input class="p-2 rounded bg-white text-black" placeholder="Search mail" type="text"/>
+     <button class="ml-2 p-2 bg-blue-700 rounded">
+      <i class="fas fa-search">
+      </i>
+     </button>
+    </div>
+   </header>
+   <!-- Main Content -->
+   <div class="flex flex-1">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white p-4 border-r border-gray-200">
+     <button class="w-full bg-blue-600 text-white p-2 rounded mb-4 flex items-center justify-center">
+      <i class="fas fa-plus mr-2">
+      </i>
+      Compose
+     </button>
+     <nav>
+      <ul>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-inbox mr-2">
+         </i>
+         Inbox
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-star mr-2">
+         </i>
+         Starred
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-paper-plane mr-2">
+         </i>
+         Sent
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-trash mr-2">
+         </i>
+         Trash
+        </a>
+       </li>
+       <li class="mb-2">
+        <a class="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded" href="#">
+         <i class="fas fa-folder mr-2">
+         </i>
+         Drafts
+        </a>
+       </li>
+      </ul>
+     </nav>
+    </aside>
+    <!-- Email List -->
+    <main class="flex-1 p-4">
+     <div class="bg-white p-4 rounded shadow">
+      <h2 class="text-xl font-bold mb-4">
+       Inbox
+      </h2>
+      <ul>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of John Doe, a middle-aged man with short brown hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          John Doe
+         </h3>
+         <p class="text-gray-600">
+          Meeting at 3 PM
+         </p>
+        </div>
+        <span class="text-gray-500">
+         2 hours ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of Jane Smith, a young woman with long blonde hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          Jane Smith
+         </h3>
+         <p class="text-gray-600">
+          Project Update
+         </p>
+        </div>
+        <span class="text-gray-500">
+         4 hours ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of Michael Brown, a young man with curly black hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          Michael Brown
+         </h3>
+         <p class="text-gray-600">
+          Lunch Tomorrow?
+         </p>
+        </div>
+        <span class="text-gray-500">
+         6 hours ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of Emily Davis, a middle-aged woman with short red hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          Emily Davis
+         </h3>
+         <p class="text-gray-600">
+          Quarterly Report
+         </p>
+        </div>
+        <span class="text-gray-500">
+         8 hours ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of David Wilson, an elderly man with gray hair and glasses" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          David Wilson
+         </h3>
+         <p class="text-gray-600">
+          Team Outing
+         </p>
+        </div>
+        <span class="text-gray-500">
+         10 hours ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of Sarah Johnson, a young woman with short black hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          Sarah Johnson
+         </h3>
+         <p class="text-gray-600">
+          New Marketing Strategy
+         </p>
+        </div>
+        <span class="text-gray-500">
+         12 hours ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of Chris Lee, a young man with short blonde hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          Chris Lee
+         </h3>
+         <p class="text-gray-600">
+          Client Feedback
+         </p>
+        </div>
+        <span class="text-gray-500">
+         14 hours ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of Anna Martinez, a middle-aged woman with long brown hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          Anna Martinez
+         </h3>
+         <p class="text-gray-600">
+          Budget Approval
+         </p>
+        </div>
+        <span class="text-gray-500">
+         16 hours ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of Robert Garcia, a young man with short black hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          Robert Garcia
+         </h3>
+         <p class="text-gray-600">
+          Meeting Rescheduled
+         </p>
+        </div>
+        <span class="text-gray-500">
+         18 hours ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of Laura Hernandez, a young woman with long black hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          Laura Hernandez
+         </h3>
+         <p class="text-gray-600">
+          New Project Proposal
+         </p>
+        </div>
+        <span class="text-gray-500">
+         20 hours ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of James Anderson, a middle-aged man with short brown hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          James Anderson
+         </h3>
+         <p class="text-gray-600">
+          Follow-up on Last Meeting
+         </p>
+        </div>
+        <span class="text-gray-500">
+         22 hours ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of Patricia Thomas, an elderly woman with short gray hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          Patricia Thomas
+         </h3>
+         <p class="text-gray-600">
+          Annual Review
+         </p>
+        </div>
+        <span class="text-gray-500">
+         1 day ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of Charles White, a young man with short brown hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          Charles White
+         </h3>
+         <p class="text-gray-600">
+          Team Meeting Notes
+         </p>
+        </div>
+        <span class="text-gray-500">
+         1 day ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of Linda Martinez, a middle-aged woman with short blonde hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          Linda Martinez
+         </h3>
+         <p class="text-gray-600">
+          Client Meeting
+         </p>
+        </div>
+        <span class="text-gray-500">
+         1 day ago
+        </span>
+       </li>
+       <li class="border-b border-gray-200 py-4 flex items-center">
+        <img alt="Profile picture of Kevin Harris, a young man with short black hair" class="h-10 w-10 rounded-full mr-4" src="https://placehold.co/40x40"/>
+        <div class="flex-1">
+         <h3 class="text-lg font-semibold">
+          Kevin Harris
+         </h3>
+         <p class="text-gray-600">
+          Project Deadline
+         </p>
+        </div>
+        <span class="text-gray-500">
+         1 day ago
+        </span>
+       </li>
+      </ul>
+     </div>
+    </main>
+   </div>
+  </div>
+ </body>
+</html>
